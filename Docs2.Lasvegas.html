@@ -1249,7 +1249,7 @@ hr {
 	</center>
 
 <center>
-<hr width="50%" style="border: 0.1px solid #447DC1 ;">
+<hr width="100%" style="border: 0.1px solid #447DC1 ;">
 </center>
 
 <center><h3>Mini info</h3></center>
@@ -1275,7 +1275,12 @@ VK.Widgets.Group("vk_groups", {mode: 3}, 204619187);
 
 
 
+<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 
+<script>
+// Sends event to client
+vkBridge.send('VKWebAppInit');
+</script>
 
 
 
