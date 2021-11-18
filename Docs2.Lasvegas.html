@@ -1265,7 +1265,22 @@ hr {
 			<hr width="70%" style="border: 0.1px solid #447DC1;">
 
 			</center>
-			
+		
+<script>
+	import bridge from '@vkontakte/vk-bridge';
+import '@vkontakte/vkui';
+ 
+bridge.send("VKWebAppInit", {});
+	
+</script>
+
+<script>
+bridge.send("VKWebAppShowNativeAds", {ad_format:"preloader"})
+.then(data => console.log(data.result))
+.catch(error => console.log(error));
+</script>
+
+
 	<center>
 
   
